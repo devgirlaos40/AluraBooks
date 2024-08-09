@@ -43,10 +43,14 @@
     font-weight: 700;
 }
 
+.lista-menu__item{
+
+}
+
 
 .lista-menu__item__link{
     text-decoration: none;
-    color: var(--color-titulo-destaque);
+    color: var(--color-degrade);
     text-transform: uppercase;
 }
 
