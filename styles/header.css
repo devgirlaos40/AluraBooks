@@ -1,3 +1,12 @@
+:root{
+    --color-titulos-e-background-links: #EB9B00;
+    --color-titulo-destaque: #002F52;
+    --color-background-textos: #FFFFFF;
+    --color-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+
+    --font-padrao: "Poppins"; 
+}
+
 .cabecalho{
     background-color: var(--color-background-textos);
     display: flex;
