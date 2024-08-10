@@ -53,9 +53,6 @@
     font-weight: 700;
 }
 
-.lista-menu__item {}
-
-
 .lista-menu__item__link {
     text-decoration: none;
     background: var(--color-degrade);
