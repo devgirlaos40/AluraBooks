@@ -1,7 +1,9 @@
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    //direction: 'vertical',
-    spaceBetween: 200,
+    spaceBetween: 10,
     loop: true,
     slidesPerView: 3,
+    pagination: {
+        el: '.swiper-paginacao',
+        type: 'bullets',
+    },
 });

@@ -1,13 +1,21 @@
+@import url(../js/swiper.js);
+
 .carrossel__titulo{
     color: var(--color-titulos-e-background-links);
     background-color: var(--color-background-textos);
-    font-size: 1.125rem;
-    font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    padding: 1.25rem 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 1rem 0 0.5rem 0;
 }
 
 .swiper-slide img{
-    padding: 5%;
+    width: 100%;
+}
+
+.swiper-paginacao {
+    position: initial;
+    text-align: center;
+    margin: 1rem 0 ;
 }
