@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraBooks</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles.css">
-    <title>AluraBooks</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -47,8 +48,41 @@
                 alt="ícone de um homem dentro de um círculo, que representa o perfil do usuário">
         </div>
     </header>
-    <main></main>
+    <main>
+        <section class="banner">
+            <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+            <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+            <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+        </section>
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Últimos Lançamentos</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/ApacheKafka.svg" alt="livro sobre Apache Kafka"></div>
+                    <div class="swiper-slide"><img src="assets/Arquitetura.svg" alt="livro sobre Arquitetura"></div>
+                    <div class="swiper-slide"><img src="assets/Gestão.svg" alt="livro sobre gestão"></div>
+                    <div class="swiper-slide"><img src="assets/Gestão2.svg" alt="livro sobre gestão avançada"></div>
+                    <div class="swiper-slide"><img src="assets/Nodejs.svg" alt="livro sobre NodeJS"></div>
+                    <div class="swiper-slide"><img src="assets/Portugol.svg" alt="livro sobre portugol"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js">
+        const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    //direction: 'vertical',
+    spaceBetween: 200,
+    loop: true,
+    slidesPerView: 3,
+});
+    </script>
 </body>
 
 </html>
