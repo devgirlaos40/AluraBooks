@@ -29,17 +29,17 @@
     width: 380px;
     height: 44px;
     font-family: var(--font-padrao);
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: normal;
-    padding: 0 2rem;
+    padding: 0 3rem;
 }
 
 .banner__pesquisa::placeholder{
     font-family: var(--font-padrao);
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: normal;
     text-align: center;
-    /* color: var(--color--texto-fundo-degrade); */
+    color: var(--color--texto-fundo-degrade);
     background: url(../assets/pesquisa.svg) no-repeat;
     padding: 0 2rem;
 }
