@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding: 0 .5rem;
+    /* padding: 0 .5rem; */
 }
 
 .cabecalho__menu-hamburguer {
@@ -16,13 +16,21 @@
     background-position: center;
 }
 
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer{
+    background-image: url(../assets/menu_aberto.svg);
+}
+
+.container__botao:checked ~ .container__rotulo{
+    background: var(--color-degrade);
+}
+
 .container {
     display: flex;
     align-items: center;
 }
 
 .container__imagem {
-    padding: 1rem .5rem
+    padding: .5rem 1rem;
 }
 
 .container__botao {
@@ -56,4 +64,8 @@
 
 .lista-menu__titulo, .lista-menu__item {
     padding: 1rem;
+}
+
+.container__rotulo{
+    padding-top: .5rem;
 }

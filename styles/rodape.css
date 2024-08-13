@@ -1,0 +1,6 @@
+.rodape{
+    background-color: var(--color-rodape);
+    font-size: 1rem;
+    border-top: .0625rem solid #858585;
+    padding: 1.5rem;
+}

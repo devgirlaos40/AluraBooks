@@ -14,7 +14,7 @@
     <header class="cabecalho">
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu">
+            <label for="menu" class="container__rotulo">
                 <span class="cabecalho__menu-hamburguer container__imagem">
                 </span>
             </label>
@@ -73,7 +73,8 @@
                 <div class="card__textos">
                     <h3 class="card__titulo">Talvez você também se interesse por...</h3>
                     <h2 class="card__titulo__destaque">Angular 11 e Firebase</h2>
-                    <p class="card__texto">Construindo uma aplicação integrada </br>com a plataforma </br> do Google.</p>
+                    <p class="card__texto">Construindo uma aplicação integrada </br>com a plataforma </br> do Google.
+                    </p>
                     <div class="card__icones">
                         <img src="assets/favoritos.svg" class="card__icones__favoritos"
                             alt="ícone de coração que representa a lista de livros favoritos">
@@ -86,7 +87,7 @@
                     <a href="#" class="card__link"> Saiba mais</a>
                 </div>
             </div>
-        </section>      
+        </section>
         <section class="carrossel">
             <h2 class="carrossel__titulo">Mais Vendidos</h2>
             <div class="swiper">
@@ -103,7 +104,8 @@
             </div>
             <div class="card">
                 <div class="card__textos">
-                    <img src="assets/estrelinhas.svg" class="card__textos__estrelas" alt="5 estrelinhas representando a avaliação do perfil da autora">
+                    <img src="assets/estrelinhas.svg" class="card__textos__estrelas"
+                        alt="5 estrelinhas representando a avaliação do perfil da autora">
                     <h3 class="card__titulo">Autora do Mês</h3>
                     <h2 class="card__titulo__destaque">Juliana Agarikov</h2>
                     <p class="card__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
@@ -120,8 +122,34 @@
                 </div>
             </div>
         </section>
+        <section class="banner topicos">
+            <h2 class="banner__titulo topicos">TÓPICOS VISITADOS RECENTEMENTE</h2>
+            <div class="banner__lista">
+                <ul class="lista__topicos">
+                    <li class="lista__topicos__link"><a href="#" class="link">Android</a></li>
+                    <li class="lista__topicos__link"><a href="#" class="link">Marketing Digital</a></li>
+                    <li class="lista__topicos__link"><a href="#" class="link">Agile</a></li>
+                    <li class="lista__topicos__link"><a href="#" class="link">Startups</a></li>
+                    <li class="lista__topicos__link"><a href="#" class="link">HTML & CSS</a></li>
+                    <li class="lista__topicos__link"><a href="#" class="link">Python</a></li>
+                    <li class="lista__topicos__link"><a href="#" class="link">OO</a></li>
+                    <li class="lista__topicos__link"><a href="#" class="link">Java</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="contato">
+            <h2 class="contato__titulo">
+                Fique por dentro das novidades!
+            </h2>
+            <p class="contato__texto">
+                Atualizações de e-books, novos livros, promoções e outros.
+            </p>
+            <input type="email" class="contato__email" placeholder="Cadastre seu e-mail">
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <h2 class="rodape">Grupo Alura</h2>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/swiper.js">
 
