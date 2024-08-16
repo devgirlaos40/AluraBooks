@@ -38,9 +38,38 @@
             </ul>
             <img src="assets/logo.svg" alt="logo do alurabooks, formada por um triângulo laranja preenchido de amarelo"
                 class="container__imagem">
+            <img src="assets/AluraBooks.svg" class="container__logo" alt="logo da AluraBooks">
+        </div>
+        <div>
+            <ul class="menu__descritivo__opcoes">
+                <input type="checkbox" id="menu_descritivo" class="container__descritivo__botao">
+                <label for="menu_descritivo">
+                    <li class="opcoes__titulo">CATEGORIAS</li>
+                </label>
+                <ul class="lista-menu lista-menu-descritivo">
+                    <li class="lista-menu__item lista-menu-descritivo__item">
+                        <a href="#" class="lista-menu__item__link lista-menu-descritivo__item__link">Programação</a>
+                    </li>
+                    <li class="lista-menu__item lista-menu-descritivo__item">
+                        <a href="#" class="lista-menu__item__link lista-menu-descritivo__item__link">Front-End</a>
+                    </li>
+                    <li class="lista-menu__item lista-menu-descritivo__item">
+                        <a href="#" class="lista-menu__item__link lista-menu-descritivo__item__link">Infraestrutura</a>
+                    </li>
+                    <li class="lista-menu__item lista-menu-descritivo__item">
+                        <a href="#" class="lista-menu__item__link lista-menu-descritivo__item__link">Business</a>
+                    </li>
+                    <li class="lista-menu__item lista-menu-descritivo__item">
+                        <a href="#" class="lista-menu__item__link lista-menu-descritivo__item__link">Design & UX</a>
+                    </li>
+                </ul>
+
+                <li class="opcoes__links"><a href="#" class="opcoes__link">FAVORITOS</a></li>
+                <li class="opcoes__links"><a href="#" class="opcoes__link">MINHA ESTANTE</a></li>
+            </ul>
         </div>
         <div class="container">
-            <img src="assets/cab_favoritos.svg" class="container__imagem"
+            <img src="assets/cab_favoritos.svg" class="container__imagem container__imagem__tablet"
                 alt="ícone de coração que lista os itens favoritados pelo usuário">
             <img src="assets/cab_compras.svg" class="container__imagem"
                 alt="ícone de uma sacola, representando o carrinho de compras">
@@ -68,12 +97,14 @@
                     <div class="swiper-slide"><img src="assets/ApacheKafka.svg" alt="livro sobre Apache Kafka"></div>
 
                 </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
             <div class="card">
                 <div class="card__textos">
                     <h3 class="card__titulo">Talvez você também se interesse por...</h3>
                     <h2 class="card__titulo__destaque">Angular 11 e Firebase</h2>
-                    <p class="card__texto">Construindo uma aplicação integrada </br>com a plataforma </br> do Google.
+                    <p class="card__texto">Construindo uma aplicação integrada <br>com a plataforma <br> do Google.
                     </p>
                     <div class="card__icones">
                         <img src="assets/favoritos.svg" class="card__icones__favoritos"
@@ -83,7 +114,7 @@
                     </div>
                 </div>
                 <div class="card__imagem__link">
-                    <img src="assets/angular.svg" class="card_imagem" alt="logo do Framework Angular">
+                    <img src="assets/angular.svg" class="card__imagem" alt="logo do Framework Angular">
                     <a href="#" class="card__link"> Saiba mais</a>
                 </div>
             </div>
@@ -117,7 +148,7 @@
                     </div>
                 </div>
                 <div class="card__imagem__link">
-                    <img src="assets/perfil_escritora.svg" class="card_imagem" alt="logo do Framework Angular">
+                    <img src="assets/perfil_escritora.svg" class="card__imagem" alt="logo do Framework Angular">
                     <a href="#" class="card__link"> Saiba mais</a>
                 </div>
             </div>
@@ -130,25 +161,144 @@
                     <li class="lista__topicos__link"><a href="#" class="link">Marketing Digital</a></li>
                     <li class="lista__topicos__link"><a href="#" class="link">Agile</a></li>
                     <li class="lista__topicos__link"><a href="#" class="link">Startups</a></li>
+                    <div class="break"></div>
                     <li class="lista__topicos__link"><a href="#" class="link">HTML & CSS</a></li>
                     <li class="lista__topicos__link"><a href="#" class="link">Python</a></li>
                     <li class="lista__topicos__link"><a href="#" class="link">OO</a></li>
                     <li class="lista__topicos__link"><a href="#" class="link">Java</a></li>
                 </ul>
             </div>
+            <div class="banner__lista__justificado">
+                <ul class="lista__topicos">
+                    <li class="lista__topicos__link"><a href="#" class="link">Android</a></li>
+                    <li class="lista__topicos__link"><a href="#" class="link">OO</a></li>
+                    <li class="lista__topicos__link"><a href="#" class="link">Marketing Digital</a></li>
+                    <li class="lista__topicos__link"><a href="#" class="link">Agile</a></li>
+                    <li class="lista__topicos__link"><a href="#" class="link">Startups</a></li>
+                    <li class="lista__topicos__link"><a href="#" class="link">HTML & CSS</a></li>
+                    <li class="lista__topicos__link"><a href="#" class="link">Java</a></li>
+                    <li class="lista__topicos__link"><a href="#" class="link">Python</a></li>
+                </ul>
+            </div>
         </section>
         <section class="contato">
-            <h2 class="contato__titulo">
-                Fique por dentro das novidades!
-            </h2>
-            <p class="contato__texto">
-                Atualizações de e-books, novos livros, promoções e outros.
-            </p>
+            <div class="contato_textos">
+                <h2 class="contato__titulo">
+                    Fique por dentro das novidades!
+                </h2>
+                <p class="contato__texto">
+                    Atualizações de e-books, novos livros, promoções e outros.
+                </p>
+            </div>
             <input type="email" class="contato__email" placeholder="Cadastre seu e-mail">
         </section>
     </main>
     <footer>
-        <h2 class="rodape">Grupo Alura</h2>
+        <div class="rodape">
+            <h2 class="titulo__rodape">Grupo Alura</h2>
+            <div class="listas__parceiros">
+                <ul class="listas__parceiros">
+                    <li class="listas__parceiros__titulo">Educação</li>
+                    <li class="listas__parceiros__item">
+                        <img src="assets/parceiros/Caelum.svg" alt="logo da Caelum" class="item__link__imagem">
+                        <a href="#" class="item__link">Caelum
+                        </a>
+                    </li>
+                    <li class="listas__parceiros__item">
+                        <img src="assets/parceiros/CasaDoCodigo.svg" alt="logo da Casa do Código"
+                            class="item__link__imagem">
+                        <a href="#" class="item__link">Casa do Código
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="listas__parceiros__titulo">Educação Online</li>
+                    <li class="listas__parceiros__item">
+                        <img src="assets/parceiros/Alura.svg" alt="logo da Alura" class="item__link__imagem">
+                        <a href="#" class="item__link">Alura
+                        </a>
+                    </li>
+                    <li class="listas__parceiros__item">
+                        <img src="assets/parceiros/AluraEmpresas.svg" alt="logo da Alura para Empresas"
+                            class="item__link__imagem">
+                        <a href="#" class="item__link">Alura para Empresas
+                        </a>
+                    </li>
+                    <li class="listas__parceiros__item">
+                        <img src="assets/parceiros/AluraLatam.svg" alt="logo da ALura LATAM" class="item__link__imagem">
+                        <a href="#" class="item__link">Alura LATAM
+                        </a>
+                    </li>
+                    <li class="listas__parceiros__item">
+                        <img src="assets/parceiros/AluraStart.svg" alt="logo da Alura Start" class="item__link__imagem">
+                        <a href="#" class="item__link">Alura Start
+                        </a>
+                    </li>
+                    <li class="listas__parceiros__item">
+                        <img src="assets/parceiros/MusicDot.svg" alt="logo da Music Dot" class="item__link__imagem">
+                        <a href="#" class="item__link">MusicDot
+                        </a>
+                    </li>
+                    <li class="listas__parceiros__item">
+                        <img src="assets/parceiros/AluraLingua.svg" alt="logo da ALura Línguas"
+                            class="item__link__imagem">
+                        <a href="#" class="item__link">Alura Línguas
+                        </a>
+                    </li>
+                    <li class="listas__parceiros__item">
+                        <img src="assets/parceiros/PM3.svg" alt="logo da PM3" class="item__link__imagem">
+                        <a href="#" class="item__link">PM3
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="listas__parceiros__titulo">Comunidade</li>
+                    <li class="listas__parceiros__item">
+                        <img src="assets/parceiros/HipstersTech.svg" alt="logo da Hipster ponto Tech"
+                            class="item__link__imagem">
+                        <a href="#" class="item__link">Hipster ponto Tech
+                        </a>
+                    </li>
+                    <li class="listas__parceiros__item">
+                        <img src="assets/parceiros/Scuba.svg" alt="logo da Scuba Dev" class="item__link__imagem">
+                        <a href="#" class="item__link">Scuba Dev
+                        </a>
+                    </li>
+                    <li class="listas__parceiros__item">
+                        <img src="assets/parceiros/Layers.svg" alt="Logo da Layers ponto tech"
+                            class="item__link__imagem">
+                        <a href="#" class="item__link">Layers ponto tech
+                        </a>
+                    </li>
+                    <li class="listas__parceiros__item">
+                        <img src="assets/parceiros/LikeABoss.svg" alt="logo da Like a Boss" class="item__link__imagem">
+                        <a href="#" class="item__link">Like a Boss
+                        </a>
+                    </li>
+                    <li class="listas__parceiros__item">
+                        <img src="assets/parceiros/CarreiraSemFronteira.svg" alt="logo da Carreira sem Fronteiras"
+                            class="item__link__imagem">
+                        <a href="#" class="item__link">Carreira sem Fronteiras
+                        </a>
+                    </li>
+                    <li class="listas__parceiros__item">
+                        <img src="assets/parceiros/HipstersJobs.svg" alt="logo da Hispter ponto Jobs"
+                            class="item__link__imagem">
+                        <a href="#" class="item__link">Hispter ponto Jobs
+                        </a>
+                    </li>
+                    <li class="listas__parceiros__item">
+                        <img src="assets/parceiros/GUJ.svg" alt="logo da GUJ" class="item__link__imagem">
+                        <a href="#" class="item__link">GUJ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/swiper.js">

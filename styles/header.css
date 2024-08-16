@@ -1,3 +1,5 @@
+/* Estilização para Mobile width: 428px */
+
 .cabecalho {
     background-color: var(--color-background-textos);
     display: flex;
@@ -16,11 +18,11 @@
     background-position: center;
 }
 
-.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer{
+.container__botao:checked~.container__rotulo>.cabecalho__menu-hamburguer {
     background-image: url(../assets/menu_aberto.svg);
 }
 
-.container__botao:checked ~ .container__rotulo{
+.container__botao:checked~.container__rotulo {
     background: var(--color-degrade);
 }
 
@@ -33,7 +35,15 @@
     padding: .5rem 1rem;
 }
 
+.container__logo {
+    display: none;
+}
+
 .container__botao {
+    display: none;
+}
+
+.menu__descritivo__opcoes {
     display: none;
 }
 
@@ -60,12 +70,84 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
+    padding: 1rem;
 }
 
 .lista-menu__titulo, .lista-menu__item {
     padding: 1rem;
 }
 
-.container__rotulo{
+.container__rotulo {
     padding-top: .5rem;
+}
+
+/* Estilização para Tablet Width: 1024px */
+
+@media screen and (min-width: 1024px) {
+    .cabecalho__menu-hamburguer {
+        visibility: hidden;
+    }
+
+    .container__rotulo {
+        display: none;
+
+    }
+
+    .container__logo {
+        display: block;
+    }
+
+    .menu__descritivo__opcoes {
+        display: flex;
+        /* gap: 2rem; */
+    }
+
+    .opcoes__titulo, .opcoes__links {
+        padding: 1rem;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--color-menu-descritivo);
+    }
+
+    /* .opcoes__links:hover {
+        background: var(--color-degrade);
+        color: white;
+    }
+
+    .opcoes__titulo:hover {
+        background: var(--color-degrade);
+        color: white;
+    } */
+
+    .container__descritivo__botao {
+        display: none;
+    }
+
+    .lista-menu {
+        display: none;
+    }
+
+    .lista-menu-descritivo__item__link {
+        padding: 0 0 0 0;
+    }
+
+    .lista-menu-descritivo__item:hover {
+        background: var(--color-degrade);
+    }
+
+    .lista-menu-descritivo__item__link:hover {
+        color: #FFFFFF;
+
+    }
+
+    .container__descritivo__botao:checked~.lista-menu-descritivo {
+        display: block;
+    }
+
+    .container__imagem__tablet {
+        display: none;
+    }
+ 
 }

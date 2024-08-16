@@ -1,70 +1,100 @@
-.card{
+.card {
     background-color: var(--color-background-textos);
     border-radius: .625rem;
-    margin: 1.5rem;
+    margin: 1.5rem auto;
     padding: 1rem;
     box-shadow: 0 .25rem .25rem #00000025;
     display: flex;
     gap: .9rem;
+    max-width: 32rem;
 }
 
-.card__textos{
-    width: 50%;
+.card__textos {
+    width: 60%;
+    /* max-width: 40vw; */
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 1rem;
     line-height: 150%;
 }
 
-.card__titulo{
+.card__titulo {
     color: var(--color-titulos-e-background-links);
     font-weight: 700;
 }
 
 
-.card__titulo__destaque{
+.card__titulo__destaque {
     color: var(--color-titulo-destaque);
-    font-size: 1.125rem;
+    font-size: 1.125em;
     font-weight: 700;
 }
 
-.card__texto{
+.card__texto {
     font-size: 0.875rem;
     font-weight: normal;
-    width: 90%;
+    /* width: 90%; */
 }
 
-
-.card__icones{
+.card__icones {
     display: flex;
     justify-content: baseline;
     gap: .5rem;
+    margin-top: auto;
 }
 
-.card__icones__sacola{
-    padding:0  9px;
+.card__icones__sacola {
+    padding: 0 9px;
 }
 
-.card__imagem__link{
-    width: 50%;
+.card__imagem__link {
+    min-width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
 }
 
-.card__imagem{
-    height: 70%;
-}
-
-.card__link{
+.card__link {
     text-decoration: none;
     color: var(--color--texto-fundo-degrade);
     background-color: var(--color-titulos-e-background-links);
     font-weight: 700;
     padding: 12px;
     text-align: center;
+    min-width: 70%;
+
 }
 
-.card__textos__estrelas{
+.card__textos__estrelas {
     width: 55%;
+}
+
+@media screen and (min-width:1024px) {
+    .card {
+        width: 60%;
+        margin: 3.75rem auto;
+        max-height: 150vw;
+        max-width: 32rem;
+
+    }
+
+    .card__texto br {
+        display: none;
+    }
+
+    .card__imagem {
+margin: 0 0 0 auto;
+
+        /* margin: .1vw 0; */
+        max-width: 70%;
+    }
+
+    .card__link {
+margin: 0 0 0 auto;
+
+        min-width: 58%;
+        max-width: 60%;
+    }
 }

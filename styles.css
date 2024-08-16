@@ -15,6 +15,9 @@
     --color-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --color--texto-fundo-degrade: #FFFFFF;
     --color-rodape: #F9F9F9;
+    --color-menu-descritivo: #000000;
+    --color-footer-titulo: #858585;
+    --color-link-parceiros: #474646;
 
     --font-padrao: "Poppins";
 }

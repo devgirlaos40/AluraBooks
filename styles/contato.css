@@ -12,14 +12,15 @@
     color: var(--color-titulo-destaque);
 }
 
-.contato__texto{
+.contato__texto {
     font-size: 1rem;
     font-weight: 300;
     color: var(--color-titulo-destaque);
     line-height: 1.5rem;
+    padding: 1rem 0;
 }
 
-.contato__email{
+.contato__email {
     width: 20rem;
     height: 2.75rem;
     border: .1rem solid var(--color-titulo-destaque);
@@ -31,11 +32,27 @@
     font-family: var(--font-padrao);
 }
 
-.contato__email::placeholder{
+.contato__email::placeholder {
     width: 95%;
     font-family: var(--font-padrao);
     font-size: 1.025rem;
     color: var(--color-titulo-destaque);
     background: url(../assets/email.svg) no-repeat;
     padding: 0 2rem;
+}
+
+
+@media screen and (min-width:1024px) {
+    .contato {
+        flex-direction: row;
+        padding: 1.5rem 16% 2rem;
+        gap: 2rem;
+    }
+    .contato_textos{
+        max-width: 45%;
+    }
+    .contato__email{
+        margin: auto;
+        max-width: 35%;
+    }
 }
